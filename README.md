@@ -1,17 +1,14 @@
-# uts_teori
+# Project UTS: Tebak Game
 
-A new Flutter project.
+Tebak Game adalah aplikasi kuis berbasis Flutter untuk menguji pengetahuan pengguna tentang game free-to-play. Setiap soal menampilkan gambar game dan petunjuk genre serta platform. Pengguna memilih satu judul dari empat pilihan jawaban.
 
-## Getting Started
+Aplikasi mengambil data game secara dinamis dari FreeToGame API. Screenshot digunakan sebagai petunjuk jika tersedia; jika tidak, aplikasi menggunakan thumbnail game.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Fitur Utama
+- Kuis berisi 5 pertanyaan per sesi.
+- Setiap pertanyaan memiliki gambar, petunjuk genre dan platform, serta 4 pilihan judul.
+- Pilihan jawaban diacak.
+- Skor dihitung berdasarkan jawaban yang benar.
+- Halaman skor akhir dan tombol untuk bermain lagi.
+- Menampilkan indikator loading dan pesan error saat data gagal dimuat.
+- Tombol coba lagi untuk memuat ulang data dari API.
