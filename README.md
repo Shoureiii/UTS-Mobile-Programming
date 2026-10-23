@@ -1,25 +1,29 @@
-# Project UTS: Tebak Game
+# Tebak Game
 
 Tebak Game adalah aplikasi kuis berbasis Flutter untuk menguji pengetahuan pengguna tentang game free-to-play. Setiap soal menampilkan gambar game dan petunjuk genre serta platform. Pengguna memilih satu judul dari empat pilihan jawaban.
 
-Aplikasi mengambil data game secara dinamis dari FreeToGame API. Screenshot digunakan sebagai petunjuk jika tersedia; jika tidak, aplikasi menggunakan thumbnail game. 
+Aplikasi mengambil data game secara dinamis dari [FreeToGame API](https://www.freetogame.com/api-doc). Screenshot digunakan sebagai petunjuk jika tersedia; jika tidak, aplikasi menggunakan thumbnail game.
 
 ## Fitur Utama
+
 - Kuis berisi 5 pertanyaan per sesi.
-- Setiap pertanyaan memiliki gambar, petunjuk genre dan platform, serta 4 pilihan judul.
+- Setiap pertanyaan menampilkan gambar, petunjuk genre dan platform, serta 4 pilihan judul.
 - Pilihan jawaban diacak.
 - Skor dihitung berdasarkan jawaban yang benar.
 - Halaman skor akhir dan tombol untuk bermain lagi.
-- Menampilkan indikator loading dan pesan error saat data gagal dimuat.
+- Indikator loading dan pesan error saat data gagal dimuat.
 - Tombol coba lagi untuk memuat ulang data dari API.
 
-##Teknologi dan Package
+## Teknologi dan Package
+
 - Flutter
 - Dart
-- http untuk mengambil data dari API
+- `http` untuk mengambil data dari API
 - FreeToGame API sebagai sumber data game
 
-##Struktur Folder
+## Struktur Folder
+
+```text
 lib/
 ├── main.dart
 ├── model/
@@ -33,13 +37,22 @@ lib/
 └── widget/
     ├── choice_button.dart
     └── error_view.dart
+```
 
-##Cara Menjalankan
+## Cara Menjalankan
+
 1. Pastikan Flutter SDK sudah terpasang.
 2. Clone repository ini atau unduh source code-nya.
-3. Buka folder project di Android Studio atau editor Flutter.
+3. Buka folder project di Android Studio.
 4. Jalankan perintah berikut untuk mengambil package:
-flutter pub get
+
+   ```bash
+   flutter pub get
+   ```
+
 5. Pastikan perangkat atau emulator memiliki akses internet.
 6. Jalankan aplikasi:
-flutter run
+
+   ```bash
+   flutter run
+   ```
