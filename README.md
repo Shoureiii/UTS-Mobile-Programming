@@ -1,4 +1,4 @@
-# Tebak Game
+# Projek UTS: Tebak Game
 
 Tebak Game adalah aplikasi kuis berbasis Flutter untuk menguji pengetahuan pengguna tentang game free-to-play. Setiap soal menampilkan gambar game dan petunjuk genre serta platform. Pengguna memilih satu judul dari empat pilihan jawaban.
 
